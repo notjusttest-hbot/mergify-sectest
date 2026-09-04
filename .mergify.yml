@@ -1,0 +1,11 @@
+queue_rules:
+  - name: default
+    merge_conditions: []
+pull_request_rules:
+  - name: auto-queue
+    conditions:
+      - base=main
+      - -draft
+    actions:
+      queue:
+        name: default
