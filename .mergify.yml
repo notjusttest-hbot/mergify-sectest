@@ -1,5 +1,6 @@
 queue_rules:
   - name: default
+    allow_inplace_checks: false
     merge_conditions:
       - check-success=ci
 pull_request_rules:
